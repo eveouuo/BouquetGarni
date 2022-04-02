@@ -1,11 +1,49 @@
 @charset "UTF-8";
 @font-face {
-    font-family: 'MaruBuri-Regular';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-10-21@1.0/MaruBuri-Regular.woff') format('woff');
+    font-family: 'Arita-buri-SemiBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/Arita-buri-SemiBold.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
-* {font-family: MaruBuri-Regular; color: #666; text-decoration: none;}
+* {margin: 0; padding: 0; list-style: none; font-family: Arita-buri-SemiBold; color: #666; text-decoration: none;}
+.clearfix::after,.clearfix::before {display: block; clear: both; content: '';}
 
-.topNav img {width: 30px;}
+
+#wrap {width: 1200px; margin: 0 auto; background-color: aliceblue; padding-top: 10px;}
+
+
+img {display: block;}
+
+/* header */
+header {width: 1200px; height: 100px; background-color: #fff; position: fixed; top: 0;}
+header .logo {float: left; height: 50px; padding: 25px 0;}
+header .logo img {display: block; height: 45px;}
+
+header .topNav {position: absolute; top: 15px; right: 10px;}
+header .topNav > ul > li {float: left; padding-left: 25px;}
+header .topNav img {width: 23px;}
+
+header nav ul.gnb {float: right; width: 600px; text-align: center; position: absolute; top: 60px; right: 0; z-index: 10;}
+header nav ul.gnb > li {float: left; width: 25%; }
+header nav ul.gnb > li > a {display: block; height: 40px; line-height: 40px; font-size: 20px; font-weight: bold; width: 100%;}
+header nav ul.gnb > li:hover > a {background-color: #feeeee;}
+
+header nav .subArea {width: 900px; position: absolute; right: 0; text-align: center; font-size: 15px; display: none;}
+header nav .subArea > .cateList {float: left; width: 25%; height: 250px; margin: 25px 0; box-sizing: border-box; border-right: 1px solid pink; }
+header nav .subArea > .cateList:last-child {border: 0;}
+header nav .subArea > .cateList > .sub {height: 30px; line-height: 30px;}
+header nav .subArea > .cateList > .sub > li:hover > a {color: palevioletred; font-weight: bold;}
+header nav .subArea > .cateList > .sub h3 {font-size: 18px; font-weight: bold; height: 35px; line-height: 35px;}
+
+header nav .sub {display: none; z-index: 100;}
+
+
+header .gnbBG {background-color: #feeeee; width: 100%; height: 300px; position: absolute; top: 100px; right: 0; display: none;}
+/* //header */
+
+/* slide */
+#slide {padding-top: 90px; width: 1180px; margin: 0 auto;}
+#slide .slideList {float: left;}
+/* //slide */
+
